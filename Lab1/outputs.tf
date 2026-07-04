@@ -18,3 +18,15 @@ output "api_key" {
   value     = var.api_key
   sensitive = true
 }
+
+output "regions" {
+  value = var.regions[0]
+}
+
+output "primary_region_instance" {
+  value = var.region_instance_count[var.regions[1]]
+}
+
+output "sku_settings" {
+  value = var.sku_settings.kind
+}
