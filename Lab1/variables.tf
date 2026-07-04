@@ -7,5 +7,5 @@ variable "environment_name" {
 }
 
 locals {
-  environment_prefix = "gurman_app"
+  environment_prefix = "${var.application_name}_${var.environment_name}_${random_string.suffix.result}"
 }
