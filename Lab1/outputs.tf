@@ -30,3 +30,11 @@ output "primary_region_instance" {
 output "sku_settings" {
   value = var.sku_settings.kind
 }
+
+output "alpha" {
+  value = module.alpha.random_string
+}
+
+output "bravo" {
+  value = module.bravo.random_string
+}
