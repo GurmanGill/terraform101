@@ -24,3 +24,9 @@ module "bravo" {
   source  = "hashicorp/module/random"
   version = "1.0.0"
 }
+
+module "rando" {
+  source = "./modules/rando"
+
+  length = 8
+}
